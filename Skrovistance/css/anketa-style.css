@@ -1,0 +1,38 @@
+/*///////////////////////////////////////////*/
+
+.kontakt-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #075500;
+  flex-direction: column;
+}
+
+input[type=text],
+textarea {
+  display: block;
+  height: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input[type=radio] {
+  margin-bottom: 20px;
+}
+
+label {
+  color: white;
+}
+
+textarea {
+  height: 60px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+.kraj {
+  display: none;
+}

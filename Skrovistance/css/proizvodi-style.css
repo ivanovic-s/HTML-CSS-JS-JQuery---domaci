@@ -1,0 +1,81 @@
+
+#proizvodi h2 {
+    color: #006308;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.proizvodi-kartice {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: #f2f2f8;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.kartica img {
+    width: 100%;
+}
+
+.kartica-tekst {
+    padding: 20px 30px;
+}
+
+/*----------------------- RESPONZIVNOST --------------------------------------*/
+
+@media (max-width: 1000px) {
+
+    .kartica img {
+        width: 140%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .kartica {
+        width: 40%;
+    }
+
+    .kartica img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .kartica {
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .kartica {
+        width: 80%;
+    }
+
+    #proizvodi h2 {
+        text-align: center;
+    }
+
+    .proizvodi-kartice {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .kartica {
+        width: 90%;
+    }
+
+}

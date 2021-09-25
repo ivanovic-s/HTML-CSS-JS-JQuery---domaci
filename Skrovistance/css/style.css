@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #101119;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 90px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+h2,
+h3,
+h4 {
+    color: #FFFFFF;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+p {
+    line-height: 25px;
+}
+
+section {
+    padding: 100px 10%;
+    position: relative;
+    z-index: 98;
+}
+
+/*--------------------------------------- HEADER ----------------------------------------------*/
+
+header {
+    height: 100vh;
+    background-image: url(img/pozadina.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    height: 50vh;
+    background-image: url(img/pozadina-stranica.jpg);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #FFFFFF;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #075500;
+    transition: .3s ease-in-out;
+}
+
+.nav-dugme {
+    width: 30px;
+    height: 20px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-linija {
+    height: 3px;
+    background-color: #101119;
+}
+
+.header-text {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    z-index: 0;
+}
+
+.header-text h2 {
+    font-size: 50px;
+}
+
+.vreme {
+    width: 80%;
+    padding: 0 10% 25px 10%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vreme h4 {
+    color: white;
+}
+
+.vreme p {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.japan-div {
+    text-align: right;
+}
+
+/*---------------------------------- POČETNA SEKCIJA -------------------------------------------*/
+
+#pocetna-sekcija {
+    padding: 100px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pocetna-sekcija ul {
+    list-style: none;
+}
+
+#pocetna-sekcija ul li {
+    padding: 20px 0;
+}
+
+/*---------------------------------- FOOTER -------------------------------------------*/
+
+footer {
+    background-color: #0c110e;
+    color: white;
+    padding: 30px 10%;
+    position: relative;
+    z-index: 98;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-nav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.footer-nav ul li a {
+    color: #A0AABB;
+    transition: .3s ease-in-out;
+}
+
+.footer-nav ul li a:hover {
+    color: #075500;
+    transition: .3s ease-in-out;
+}
+
+.danasnji-datum {
+    color: white;
+    text-align: right;
+    margin: 20px 0;
+}
+
+
+/*---------------------------------- RESPONZIVNOST -------------------------------------------*/
+
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    nav {
+        width: 90%;
+        padding: 0 5%;
+        background-color: #FFFFFF;
+        box-shadow: 0px 9px 28px -9px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 9px 28px -9px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 9px 28px -9px rgba(0, 0, 0, 0.5);
+    }
+
+    section {
+        padding: 100px 5%;
+    }
+
+    footer {
+        padding: 30px 5%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nav-dugme {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        padding-bottom: 30px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: flex;
+        text-align: center;
+        display: none;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .footer-nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .footer-nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}

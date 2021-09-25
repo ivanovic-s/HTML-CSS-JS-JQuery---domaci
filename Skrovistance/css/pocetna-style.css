@@ -1,0 +1,94 @@
+#pocetak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pocetak-tekst p {
+    width: 70%;
+}
+
+.pocetak-slika {
+    width: 400px;
+}
+
+.pocetak-tekst h2 {
+    color: #006308;
+}
+
+/*----------------------------------- ISTORIJA ----------------------------------------*/
+
+#istorija {
+    background-image: url(img/istorija.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative;
+    z-index: 98;
+    overflow: hidden;
+}
+
+.zeleni-overlay {
+    height: 100%;
+    background-color: #075500cb;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zeleni-overlay p {
+    color: #FFFFFF;
+}
+
+/*----------------------------------- RESPONZIVNOST ----------------------------------------*/
+
+@media (max-width: 950px) {
+
+    .pocetak-slika {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #pocetak {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pocetak-tekst {
+        margin-bottom: 40px;
+    }
+
+    .pocetak-tekst p {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .pocetak-slika {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section {
+        padding: 80px 5%;
+    }
+
+    .zeleni-overlay {
+        padding: 80px 5%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
